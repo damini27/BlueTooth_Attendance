@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ajittiwaris.bluetooth_attendance" >
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".SplashScreen" />
+        <activity android:name=".frmLogin" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".afterLogin"
+            android:label="Select Class" />
+        <activity
+            android:name=".Register"
+            android:label="Home" />
+        <activity
+            android:name=".EnterDetails"
+            android:label="Student Registration" />
+        <activity
+            android:name=".TakeAttendance"
+            android:label="Mark Attendance" />
+        <activity
+            android:name=".ViewAttendance"
+            android:label="View Attendance" />
+        <activity
+            android:name=".ViewStudentDetails"
+            android:label="View Details" />
+        <activity
+            android:name=".EditStuDetails"
+            android:label="Edit Details" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:parentActivityName=".frmLogin"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ajittiwaris.bluetooth_attendance.frmLogin" />
+        </activity>
+        <activity
+            android:name=".Teacher_account"
+            android:label="@string/title_activity_teacher_account"
+            android:parentActivityName=".frmLogin"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ajittiwaris.bluetooth_attendance.frmLogin" />
+        </activity>
+        <activity android:name=".ClassDetails" >
+        </activity>
+        <activity
+            android:name=".ViewClassDetails"
+            android:label="@string/title_activity_view_class_details"
+            android:theme="@style/AppTheme" >
+        </activity>
+    </application>
+
+</manifest>

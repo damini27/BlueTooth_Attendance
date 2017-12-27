@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@drawable/layout_shape"
+    android:padding="5dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Update Attendance"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:padding="10dp"
+        android:background="@drawable/txtshape"
+        android:hint="Enter Attendance"
+        android:inputType="number"
+        android:id="@+id/txtAttnds"
+        android:layout_marginBottom="5dp"
+        android:layout_height="40dp" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/progressBar"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

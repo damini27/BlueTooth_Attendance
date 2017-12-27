@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    tools:context="com.example.ajittiwaris.bluetooth_attendance.EnterDetails">
+
+
+    <include layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="match_parent"
+                    android:text="Scan New Device"
+                    android:background="@drawable/selector"
+                    android:textSize="20dp"
+                    android:id="@+id/btScan"
+                    android:textAllCaps="false"
+                    android:drawableLeft="@drawable/ic_bluetooth_white_36dp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:layout_height="wrap_content" />
+
+                <ProgressBar
+                    android:translationZ="2dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50dp"
+                    android:id="@+id/prg"
+                    android:visibility="invisible"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+            </RelativeLayout>
+
+
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/btitemlist">
+
+            </ListView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:background="@drawable/txtshape"
+                android:inputType="text"
+                android:hint="Student Name"
+                android:id="@+id/txtstdname"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:background="@drawable/txtshape"
+                android:inputType="text"
+                android:hint="Roll No"
+                android:id="@+id/txtrlno"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:background="@drawable/txtshape"
+                android:inputType="textCapCharacters"
+                android:hint="Mac Address"
+                android:id="@+id/txtmac"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/selector"
+                android:id="@+id/btsave"
+                />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="View Details"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/selector"
+                android:id="@+id/btview"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

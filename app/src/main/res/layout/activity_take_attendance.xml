@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ajittiwaris.bluetooth_attendance.TakeAttendance">
+
+
+    <include layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="8"
+        android:orientation="vertical"
+        android:layout_height="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="Search Device"
+                android:paddingLeft="0dp"
+                android:drawableLeft="@drawable/ic_bluetooth_white_36dp"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="0dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/selector"
+                android:id="@+id/btsearch"
+                />
+
+            <ProgressBar
+                android:translationZ="2dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:id="@+id/prg"
+                android:visibility="invisible"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+        </RelativeLayout>
+
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btitemlist">
+
+        </ListView>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:layout_height="0dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:text="Total Device: 0"
+                android:id="@+id/txtcount"
+                />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:background="@drawable/selector"
+                        android:text="Mark Attendance"
+                        android:textColor="#FFFFFF"
+                        android:textAllCaps="false"
+                        android:textSize="20dp"
+                        android:id="@+id/btmarkattn"
+                        android:textStyle="bold"
+                        android:layout_height="55dp" />
+
+                </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

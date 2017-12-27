@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ajittiwaris.bluetooth_attendance.EditStuDetails">
+
+    <include layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text="Student Name"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:padding="10dp"
+            android:background="@drawable/txtshape"
+            android:inputType="text"
+            android:hint="Student Name"
+            android:id="@+id/txtstdname"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Roll Number"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_height="55dp"
+            android:padding="10dp"
+            android:background="@drawable/txtshape"
+            android:inputType="text"
+            android:hint="Roll No"
+            android:id="@+id/txtrlno"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="MAC Address"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_height="55dp"
+            android:padding="10dp"
+            android:background="@drawable/txtshape"
+            android:inputType="textCapCharacters"
+            android:hint="Mac Address"
+            android:id="@+id/txtmac"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Update Details"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/selector"
+            android:id="@+id/btsave"
+            />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="View Details"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/selector"
+            android:id="@+id/btview"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+

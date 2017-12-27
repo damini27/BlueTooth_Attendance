@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ajittiwaris.bluetooth_attendance.Register">
+
+    <include layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:text="Registration"
+                android:background="@drawable/class_bt_selector"
+                android:layout_height="70dp"
+                android:id="@+id/btregister" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:text="Take Attendance"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/class_bt_selector"
+                android:layout_height="70dp"
+                android:id="@+id/bttakeattendance" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:text="View Attendance"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/class_bt_selector"
+                android:layout_height="70dp"
+                android:id="@+id/btviewattendance" />
+
+
+
+            </LinearLayout>
+    </ScrollView>
+</LinearLayout>

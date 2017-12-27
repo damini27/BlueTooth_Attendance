@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ajittiwaris.bluetooth_attendance.frmLogin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtheader"
+            android:text="Admin Login"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txttitle"
+        android:text="@string/title"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:layout_width="101dp"
+        android:layout_height="101dp"
+        android:id="@+id/img1"
+        android:layout_gravity="center"
+        android:src="@drawable/logoclg"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/txtshape"
+                android:inputType="text"
+                android:paddingLeft="57dp"
+                android:hint="User Name"
+                android:id="@+id/txtuname"/>
+
+            <Button
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:drawableTop="@drawable/ic_person"
+                android:background="@drawable/shape"
+                android:paddingTop="9dp"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/txtshape"
+                android:paddingLeft="57dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:id="@+id/txtupas"/>
+
+            <Button
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:drawableTop="@drawable/ic_lock"
+                android:background="@drawable/shape"
+                android:paddingTop="9dp"
+                />
+        </RelativeLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/selector"
+            android:id="@+id/btlogin"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/register"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:textSize="20dp" />
+</LinearLayout>
